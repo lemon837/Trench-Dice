@@ -14,6 +14,7 @@
 		CC3ACE762E6E88BA00F63EA6 /* Trench_AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ACE752E6E88BA00F63EA6 /* Trench_AssistantTests.swift */; };
 		CC3ACE802E6E88BA00F63EA6 /* Trench_AssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ACE7F2E6E88BA00F63EA6 /* Trench_AssistantUITests.swift */; };
 		CC3ACE822E6E88BA00F63EA6 /* Trench_AssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ACE812E6E88BA00F63EA6 /* Trench_AssistantUITestsLaunchTests.swift */; };
+		CC3ACE8F2E6E88F600F63EA6 /* DiceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ACE8E2E6E88F500F63EA6 /* DiceEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CC3ACE7B2E6E88BA00F63EA6 /* Trench AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trench AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3ACE7F2E6E88BA00F63EA6 /* Trench_AssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trench_AssistantUITests.swift; sourceTree = "<group>"; };
 		CC3ACE812E6E88BA00F63EA6 /* Trench_AssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trench_AssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC3ACE8E2E6E88F500F63EA6 /* DiceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				CC3ACE662E6E88B700F63EA6 /* ContentView.swift */,
 				CC3ACE682E6E88BA00F63EA6 /* Assets.xcassets */,
 				CC3ACE6A2E6E88BA00F63EA6 /* Preview Content */,
+				CC3ACE8E2E6E88F500F63EA6 /* DiceEngine.swift */,
 			);
 			path = "Trench Assistant";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3ACE8F2E6E88F600F63EA6 /* DiceEngine.swift in Sources */,
 				CC3ACE672E6E88B700F63EA6 /* ContentView.swift in Sources */,
 				CC3ACE652E6E88B700F63EA6 /* Trench_AssistantApp.swift in Sources */,
 			);

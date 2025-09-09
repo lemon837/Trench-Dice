@@ -123,9 +123,9 @@ struct ContentView: View {
                         }
                     }
                 }
-                
+                /** Don't need this anymore?
                 // MARK: Button to calculate the results.
-                Button("Calculate") {
+                 Button("Calculate") {
                     results = DiceEngine.calculateProbabilities(
                         n: numDice,
                         keep: keep,
@@ -135,6 +135,7 @@ struct ContentView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.blue)
+                 */
                 
                 // MARK: Output the results.
                 if !results.isEmpty {
@@ -167,6 +168,21 @@ struct ContentView: View {
                 Spacer()
             }
             .padding()
+            
+            // Recalculate whenever any state changes.
+            .onChange(of: numDice) { _ in recalc() }
+            .onChange(of: keep) { _ in recalc() }
+            .onChange(of: armour) { _ in recalc() }
+            .onChange(of: bonus) { _ in recalc() }
+            .onAppear { recalc() }
         }
+    }
+    private func recalc() {
+        results = DiceEngine.calculateProbabilities(
+            n: numDice,
+            keep: keep,
+            armour: armour,
+            bonus: bonus
+        )
     }
 }
